@@ -35,6 +35,7 @@ document.querySelector('.button1').addEventListener
             }
             document.querySelector('body').style.backgroundColor = '#60b347';
             guessButton.setAttribute('disabled', 'disabled');
+            userGuess.value = '';
         }
 
         else if (userGuess.value > randomInt) {
@@ -42,6 +43,7 @@ document.querySelector('.button1').addEventListener
             message.style.color = 'red';
             userGuess.textContent = '';
             score.textContent -= 1;
+            userGuess.value = '';
         }
 
         else if (userGuess.value < randomInt && score.textContent >= 1) {
@@ -49,11 +51,13 @@ document.querySelector('.button1').addEventListener
             message.style.color = 'red';
             userGuess.textContent = ' ';
             score.textContent -= 1;
+            userGuess.value = '';
         }
 
         else {
             message.textContent = 'You have lost the game...';
             guessButton.setAttribute('disabled', 'disabled');
+            userGuess.value = '';
         }
     });
 
