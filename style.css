@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Silkscreen;
+  src: url("SLKSCR.TTF");
+  color: black;
+}
+
+body {
+  background-color: rgb(44, 44, 44);
+}
+
+h1 {
+  color: white;
+  font-family: Silkscreen;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  font-size: 2vw;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.numberReveal {
+  width: 30%;
+  margin: auto;
+  background-color: white;
+}
+
+.numberReveal h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 180px;
+  color: rgb(44, 44, 44);
+}
+
+.inputGuess {
+  text-align: center;
+  margin: auto;
+  padding-top: 5px;
+  height: 60px;
+  font-size: 45px;
+  font-family: Silkscreen;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 220px;
+  font-size: 2vw;
+  left: 0;
+  bottom: 0;
+}
+
+.button1 {
+  margin-top: 20px;
+  height: 50px;
+  width: 150px;
+  font-size: 2vw;
+  cursor: pointer;
+  font-family: Silkscreen;
+  background-color: white;
+  border: none;
+  background-color: gree;
+}
+
+.button2 {
+  float: left;
+  border: none;
+  background-color: white;
+  font-family: Silkscreen;
+  height: 50px;
+  width: 20%;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.right {
+  position: relative;
+  font-size: 20px;
+  width: 40%;
+  float: right;
+}
