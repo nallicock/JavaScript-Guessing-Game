@@ -51,8 +51,9 @@ document.querySelector('.button1').addEventListener
             score.textContent -= 1;
         }
 
-        else if (score.textContent == 0) {
+        else {
             message.textContent = 'You have lost the game...';
+            guessButton.setAttribute('disabled', 'disabled');
         }
     });
 
@@ -66,4 +67,6 @@ document.querySelector('.button2').addEventListener
         randomInt = getRandomNumber();
         printRandomNumber(randomInt);
         userGuess.value = '';
+        message.textContent = 'Start Guessing!';
+        message.style.color = 'white';
     });
